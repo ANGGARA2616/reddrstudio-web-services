@@ -82,7 +82,7 @@ export function Hero() {
 
                             {/* Main Hero Image */}
                             <Image
-                                src="/images/hero-bg.png"
+                                src="/assets/hero.png"
                                 alt="ReddRStudio Portfolio"
                                 fill
                                 className="object-cover mt-0"
