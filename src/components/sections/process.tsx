@@ -12,12 +12,12 @@ const processes = [
     {
         icon: Layout,
         title: "2. Perencanaan & Sitemap",
-        description: "Penyusunan struktur halaman (wireframe) agar navigasi efisien dan alur informasi tepat sasaran.",
+        description: "Penyusunan struktur halaman agar navigasi efisien dan alur informasi tepat sasaran.",
     },
     {
         icon: Palette,
         title: "3. Desain Visual",
-        description: "Pembuatan mockup desain yang modern dan sesuai dengan identitas brand Anda.",
+        description: "Pembuatan desain yang modern dan sesuai dengan yang Anda inginkan.",
     },
     {
         icon: Code,
@@ -26,13 +26,13 @@ const processes = [
     },
     {
         icon: CheckSquare,
-        title: "5. Uji Coba (Testing)",
+        title: "5. Uji Coba (30 Hari)",
         description: "Pengecekan menyeluruh di berbagai perangkat (Mobile/Desktop) dan perbaikan bug.",
     },
     {
         icon: Rocket,
         title: "6. Peluncuran",
-        description: "Website resmi mengudara! Dilengkapi panduan cara mengelola konten website Anda.",
+        description: "Website resmi di deploy! Dilengkapi panduan cara mengelola konten website Anda.",
     },
 ];
 

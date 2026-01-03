@@ -5,18 +5,18 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
     {
-        name: "Budi Santoso",
-        role: "CEO, TechStartup ID",
+        name: "Bagus Al",
+        role: "Mahasiswa, Universitas Muhammadiyyah Malang",
         text: "Website yang dibuat sangat cepat dan desainnya premium. Konversi leads kami meningkat 30% sejak redesign.",
     },
     {
-        name: "Sarah Wijaya",
-        role: "Owner, Beauty Glow",
+        name: "Zidane Amir",
+        role: "Mahasiswa, Universitas Muhammadiyyah Malang",
         text: "Sangat puas dengan pelayanannya. Komunikatif dan hasil akhirnya melebihi ekspektasi. Recommended!",
     },
     {
-        name: "Dian Pratama",
-        role: "Founder, Creative Space",
+        name: "Evan Alfredio Pratama",
+        role: "Mahasiswa, Universitas Muhammadiyyah Malang",
         text: "Proses kerjanya jelas, on-time, dan after-sales support-nya sangat membantu kami yang awam teknis.",
     },
 ];
