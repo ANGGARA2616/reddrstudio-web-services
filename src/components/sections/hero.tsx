@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export function Hero() {
@@ -67,29 +68,29 @@ export function Hero() {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="relative lg:h-[600px] flex items-center justify-center"
+                    className="relative lg:h-[600px] flex items-center justify-center font-outfit"
                 >
-                    <div className="relative w-full aspect-square max-w-[500px] glass rounded-2xl border border-white/10 p-4 shadow-2xl shadow-primary/20 bg-gradient-to-br from-white/5 to-transparent">
+                    <div className="relative w-full aspect-square max-w-[500px] glass rounded-3xl border border-white/10 p-4 shadow-2xl shadow-primary/20 bg-gradient-to-br from-white/5 to-transparent overflow-hidden">
                         {/* Abstract Code/UI Representation */}
                         <div className="absolute inset-0 bg-grid-white/[0.02] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] rounded-2xl" />
-                        <div className="h-full w-full bg-background/50 rounded-xl border border-white/5 overflow-hidden relative">
-                            <div className="absolute top-0 w-full h-8 bg-white/5 border-b border-white/5 flex items-center px-4 gap-2">
+                        <div className="h-full w-full bg-background/50 rounded-2xl border border-white/5 overflow-hidden relative">
+                            <div className="absolute top-0 w-full h-8 bg-white/5 border-b border-white/5 flex items-center px-4 gap-2 z-10 glass">
                                 <div className="w-3 h-3 rounded-full bg-red-500/50" />
                                 <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
                                 <div className="w-3 h-3 rounded-full bg-green-500/50" />
                             </div>
-                            {/* Decorative content simulating a high-end website */}
-                            <div className="p-8 mt-8 space-y-6 opacity-50">
-                                <div className="h-32 w-full bg-primary/20 rounded-lg animate-pulse" />
-                                <div className="space-y-3">
-                                    <div className="h-4 w-3/4 bg-white/10 rounded" />
-                                    <div className="h-4 w-1/2 bg-white/10 rounded" />
-                                </div>
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div className="h-24 bg-white/5 rounded-lg" />
-                                    <div className="h-24 bg-white/5 rounded-lg" />
-                                </div>
-                            </div>
+
+                            {/* Main Hero Image */}
+                            <Image
+                                src="/images/hero-bg.png"
+                                alt="ReddRStudio Portfolio"
+                                fill
+                                className="object-cover mt-0"
+                                priority
+                            />
+
+                            {/* Overlay decoration to keep it premium look even before image is uploaded */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent pointer-events-none" />
                         </div>
                     </div>
                 </motion.div>

@@ -12,28 +12,28 @@ const projects = [
         id: 1,
         title: "TechStartup Landing",
         category: "Landing Page",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+        image: "/images/portfolio-1.png",
         desc: "Modern landing page untuk startup SaaS high-growth.",
     },
     {
         id: 2,
         title: "ConstructPro Profile",
         category: "Company Profile",
-        image: "https://images.unsplash.com/photo-1590212151175-e58edd96185b?q=80&w=2342&auto=format&fit=crop",
+        image: "/images/portfolio-2.png",
         desc: "Profil perusahaan konstruksi dengan galeri proyek interaktif.",
     },
     {
         id: 3,
         title: "E-Health Dashboard",
         category: "Web App",
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2340&auto=format&fit=crop",
+        image: "/images/portfolio-3.png",
         desc: "Aplikasi manajemen pasien untuk klinik modern.",
     },
     {
         id: 4,
         title: "Creative Agency",
         category: "Landing Page",
-        image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2400&auto=format&fit=crop",
+        image: "/images/portfolio-4.png",
         desc: "Portfolio kreatif dengan animasi scroll yang immersive.",
     },
 ];
@@ -64,8 +64,8 @@ export function Portfolio() {
                                 key={cat}
                                 onClick={() => setActiveCategory(cat)}
                                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === cat
-                                        ? "bg-primary text-white shadow-lg shadow-primary/25"
-                                        : "glass hover:bg-white/10 text-muted-foreground"
+                                    ? "bg-primary text-white shadow-lg shadow-primary/25"
+                                    : "glass hover:bg-white/10 text-muted-foreground"
                                     }`}
                             >
                                 {cat}
@@ -96,7 +96,6 @@ export function Portfolio() {
                                     alt={project.title}
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                    unoptimized
                                 />
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
